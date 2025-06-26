@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Prime numbers game"""
 
+
 def isWinner(x, nums):
     """
     Determines the winner of a prime game over x eounds.
@@ -23,7 +24,7 @@ def isWinner(x, nums):
 
     for i in range(2, int(max_n**0.5) + 1):
         if is_prime[i]:
-            for multiple in range(i*i, max_n +1, i):
+            for multiple in range(i*i, max_n + 1, i):
                 is_prime[multiple] = False
 
     prime_counts = [0] * (max_n + 1)
