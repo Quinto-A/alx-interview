@@ -32,7 +32,7 @@ def isWinner(x, nums):
     for i in range(2, max_n + 1):
         if is_prime[i]:
             count += 1
-        prime_counts[1] = count
+        prime_counts[i] = count
 
     maria_wins = 0
     ben_wins = 0
